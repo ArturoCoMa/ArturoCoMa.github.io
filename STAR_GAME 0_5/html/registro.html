@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Star Games</title>
+	<link rel="icon" type="image/x-icon" href="..\img\star.png">
+	<link rel="stylesheet" href="..\css\estilos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="bodyReg">
+	<header>
+			<h1>
+				<a href="..\StarGamesHTML.html"><img src="..\img\logoSG.png" class="logo"></a>
+			</h1>
+		<h1 class="estrellas">
+			From gaming to the stars
+		</h1>
+	</header>
+	<nav>
+		<a href="..\StarGamesHTML.html">INICIO</a>
+		<a href="..\html\tienda.html">TIENDA</a>
+		<a href="..\html\registro.html">REGISTRARSE</a>
+		<a href="..\html\nosotros.html">NOSOTROS</a>
+	</nav>	
+
+	<main>
+		<form action="http://www.formular-chef.com/Formular-Chef.cgi" method="POST">
+		<input type="hidden" name="recipient" value="arturocollados.alu@iespacomolla.es" />
+			<fieldset class="datosContainer">
+			<legend>DATOS PERSONALES</legend>
+				<table>			
+					<tr>
+						<!--nombre-->
+						<td>
+							<label id="lblNom" for="txtNom">Nombre:</label>
+						</td>
+						<td>
+							<input id="txtNom" name="Nombre" type="text" placeholder="Escribe tu nombre." autocomplete="on" required="required" autofocus/>
+						</td>
+					</tr>
+					<tr>
+						<!--Nick-->
+						<td>
+							<label id="lblNick" for="txtNick">Nick:</label>
+						</td>
+						<td>
+							<input id="txtNick" name="Nick" type="text" placeholder="Escribe tu Nick" required="required"/>
+						</td>
+					</tr>
+					</tr>
+					<tr>
+						<!--Fecha nacimiento-->
+						<td>
+							<label id="lblNaci" for="txtNaci">Fecha Nacimiento:</label>
+						</td>
+						<td>
+							<input id="txtNaci" name="Nacimiento" type="date"/>
+						</td>
+					</tr>
+				</table>
+				<div>
+					<!--Género-->
+					<label id="lblRadio1" for="txtRadio1">Femenino</label>
+					<input id="txtRadio1" name="genero" type="radio"/>
+					<label id="lblRadio2" for="txtRadio2">Masculino</label>
+					<input id="txtRadio2" name="genero" type="radio"/>
+					<label id="lblRadio3" for="txtRadio3">No-Binario</label>
+					<input id="txtRadio3" name="genero" type="radio"/>
+				</div>
+
+			</fieldset>	
+
+			<fieldset class="completentosContainer">
+				<legend>DATOS COMPLEMENTARIOS</legend>
+					<table>
+						<tr>
+							<!--E-Mail-->
+							<td><label id="lblCorreo" for="txtCorreo">E-Mail:</label></td>
+							<td><input id="txtCorreo" name="Correo" type="email" required="required"></td>	
+						</tr>
+						<tr>
+							<!--Contraseña-->
+							<td><label id="lblPass" for="txtPass">Contraseña:</label></td>
+							<td><input id="txtPass" name="Password" type="password" required="required"></td>
+						</tr>
+						<tr>
+							<!--Validar Contraseña-->
+							<td><label id="lblVPass" for="txtVPass">Verificar Contraseña:</label></td>
+							<td><input id="txtVPass" name="VerPassword" type="password" required="required"></td>
+						</tr>
+					</table>
+			</fieldset>
+			<div id="boton">
+				<label id="lblEnviar" for="txtEnviar"></label>
+				<input id="txtEnviar" name="Enviar" type="submit" value="Enviar"/>
+			</div>
+		</form>
+	</main>
+
+		<footer>
+		        <small>Copyright © 2021 LCG Entertainment, Inc. 
+				<br>
+				<br>
+		        All Rights Reserved.Privacy Policy Terms of Service.</small>
+		        <div id="socialContainer">
+			        <a href="#" class="fa fa-facebook"></a>
+			        <a href="#" class="fa fa-twitter"></a>
+			        <a href="#" class="fa fa-instagram"></a>	        	
+		        </div>
+		</footer>
+</body>
